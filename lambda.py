@@ -1,5 +1,8 @@
 import json
-import uuid 
+import uuid
+import boto3
+
+
 get_raw_path = "/getPerson"
 create_raw_path = "/postPerson"
 def lambda_handler(event, context):
@@ -29,7 +32,7 @@ def lambda_handler(event, context):
           return {"personId" : str(uuid.uuid1())}
           
           
-          
+
           
     
     
