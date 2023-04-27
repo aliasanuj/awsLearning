@@ -3,7 +3,7 @@ This is all about AWS learning
 
 #################################################
 
-Run AWS from local : 
+Get the S3 Bucket name from AWS console from local IDE (PyCharm) : 
 
 
 Some of the AWS services can be run from local (From any IDE let's say PyCharm in my case). 
