@@ -7,11 +7,14 @@ Run AWS from local :
 
 
 Some of the AWS services can be run from local (From any IDE let's say PyCharm in my case). 
-If we have to interact with S3 bucket, then we need awscli configuration. For other services like interacting with lambda, we need to have SAM CLI as well.
+If we have to interact with S3 bucket, then we need awscli configuration. For other services like 
+interacting with lambda, we need to have SAM CLI as well.
 Interacting with S3 locally (with Pycharm)
 
-	1. Go to AWS  and create IAM user with some basic Policy AdministratorAccess and get the aws_access_key_id and aws_secret_access_key .
-	2. Go to PyCharm and install the awscli pip install awscli and after inctalling , configure this with below commands :
+	1. Go to AWS  and create IAM user with some basic Policy AdministratorAccess and get the 
+	aws_access_key_id and aws_secret_access_key .
+	2. Go to PyCharm and install the awscli pip install awscli and after inctalling , 
+	configure this with below commands :
 	
 	PS C:\Git> aws configure
 	AWS Access Key ID [None]: AKIAUFYDVDFVDFVX6546546Y5DSBC7R6WSZV7P
@@ -20,11 +23,13 @@ Interacting with S3 locally (with Pycharm)
 	Default output format [None]:
 	PS C:\Git>  
 	
-	3. It will create two files in local users with .aws (as configure files will be created with .filename naming convention) which contain region, secret key and secret password
+	3. It will create two files in local users with .aws (as configure files will be created with .filename naming convention) 
+	which contain region, secret key and secret password
 ![image](https://user-images.githubusercontent.com/40429093/234926267-ad732832-7564-4cb7-8dea-d5d90a84d133.png)
 
 
-	4. Now to check the connection from your PyCharm with AWS console run the below code. Also install all the missing module/library like boto3 and all.
+	4. Now to check the connection from your PyCharm with AWS console run the below code. 
+	Also install all the missing module/library like boto3 and all.
 
 	importboto3
 	client=boto3.client('s3')
